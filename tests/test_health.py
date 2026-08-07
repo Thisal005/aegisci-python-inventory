@@ -28,7 +28,7 @@ async def test_health_check(client: AsyncClient) -> None:
 async def test_readiness_check(client: AsyncClient) -> None:
     """Test /api/v1/ready endpoint."""
     response = await client.get("/api/v1/ready")
-    assert response.status_code == 200
+    assert response.status_code == 500  # Intentionally failing
     data = response.json()
     assert data["status"] == "ready"
     assert data["database"] == "connected"
