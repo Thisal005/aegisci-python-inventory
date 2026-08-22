@@ -1,4 +1,4 @@
-# AegisCI Inventory Management REST API (`aegisci-python-invens`)
+# AegisCI Inventory Management REST API (`aegisci-python-inventorys`)
 
 [![CI Pipeline](https://github.com/aegisci/aegisci-python-inventory/actions/workflows/ci.yml/badge.svg)](https://github.com/aegisci/aegisci-python-inventory/actions)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
