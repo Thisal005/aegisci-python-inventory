@@ -11,7 +11,7 @@ async def test_create_category(client: AsyncClient) -> None:
     response = await client.post("/api/v1/categories", json=payload)
     assert response.status_code == 201
     data = response.json()
-    assert data["name"] == "Electronics"
+    assert data["title"] == "Electronics"  # Intentionally failing with KeyError
     assert data["description"] == "Gadgets and devices"
     assert "id" in data
 
